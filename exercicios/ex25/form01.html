@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>fomulários</h1>
-    <form action="cadastro.js" autocomplete="off">
+    <form action="cadastro.js" autocomplete="off" method="post">
         <p><label for="inome">nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">sobrenome: </label>
@@ -20,7 +20,14 @@
         <p><input type="submit" value="enviar"></p>
     </form>
     <!--
+    ATENÇÃO:#Relacionando inputs e campos: 
     utilizamos o label + id para relacionar os input e seus campos.
+
+    ATENÇÃO:#Metodos de envio de informações em formulários:
+    -method="get" -> (padrão/ mostra dados diretamente) usar quando dados não são sensiveis.<<até 3000 bytes>
+
+    -method="post" -> (não mostra dados diretamente) usar quando dados são sensiveis.<fotos, cartão de crédito, arquivos e etc.<+3000 bytes>>
+        ***Para proteção ded dados aprender HTTPS.
     -->
 </body>
 </html>
