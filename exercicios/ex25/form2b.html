@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ESCREVA²</h1>
+
+    <!--Formulário-->
+    <form action="#" method="post">
+        <label for="iusu">Usuário</label>
+        <input type="text" id="iusu" autocomplete="off" minlength="3" maxlength="5">
+        <input type="submit" value="Enviar">
+    </form>
+    <p id="mensagem"></p>
+
+    <!--JS-->
+    <script>
+    document.querySelector("form").onsubmit = (e) => {
+        e.preventDefault();
+        let iusu = document.querySelector("#iusu").value.trim();
+        document.querySelector("#mensagem").textContent = iusu ? `Obrigado, ${iusu}!`: "Digite um nome.";
+    };
+    </script>
+</body>
+</html>
