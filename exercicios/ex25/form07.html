@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t2</title>
+</head>
+<body>
+    <!--Select, datalist e textarea em HTML...***SEMPRE USE POST-->
+    <form action="#" method="post">
+        <p>
+        <!--SELECT:-->    
+            <label for="iest">estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <!--CENTRO-OESTE-->
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <!--SUDESTE-->
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <!--SUL-->
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+<!--
+DIFERENTE DO SELECT, O DATALIST SE TRATA APENAS DE SUGESTTÕES... JÁ O SELECT É PARA OPÇÕES FIXAS.      
+-->
+        <p>
+            <!--DATALIST:-->
+            <label for="iprof">profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" >
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="PROF">Professor</option>
+                <option value="ADV">Advogado</option>
+            </datalist>
+        </p>
+        <p>
+            <!--TEXTAREA: -->
+            <label for="imsg"></label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
