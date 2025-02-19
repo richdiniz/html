@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <span id="UNEM" class="material-icons" onclick="clkmenu()">menu</span>
+        <menu id="bagulho">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>TESTES DE MEDIA QUERIES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eius optio enim tempora voluptatibus sint magnam quam? Qui cumque natus accusamus fuga! Ex vel eaque nostrum voluptatum alias placeat totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam at rerum, sed laborum quos quas magnam nostrum eveniet delectus assumenda debitis quod mollitia cumque. Labore, tenetur quasi. Quasi, debitis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid recusandae ad fugit deleniti qui doloremque, excepturi nisi modi doloribus tempore laboriosam consectetur maiores fuga, omnis aliquam, id ipsum. Veritatis, hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolorum aspernatur ex dolor adipisci debitis esse maxime iusto recusandae voluptatibus eius, provident quod possimus cum a? Adipisci tempore eveniet modi.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nulla consectetur laboriosam vitae voluptates deserunt iste sunt doloremque beatae aspernatur! Quod nobis sunt, neque eum veritatis fugiat officia quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos totam doloribus illum ipsam, velit ex, unde a dolorem porro libero modi eos. Voluptate aperiam, rerum voluptates totam facilis omnis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora eos voluptatum ullam molestias? Nemo fugit beatae quam omnis hic sit officia veniam possimus. Ipsa fuga facilis impedit laudantium alias!</p>
+        </article>
+    </main>
+    <script>
+        function clkmenu(){
+            //bagulho.style.display='block'
+            if(bagulho.style.display=='block'){
+                bagulho.style.display='none'
+            }else{
+                bagulho.style.display='block'
+            }
+        }
+    </script>
+</body>
+</html>
