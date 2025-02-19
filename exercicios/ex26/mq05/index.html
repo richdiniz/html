@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/mQ.css">
     <title>Document</title>
 </head>
-<body>
+<body onresize="mdt()">
     <header>
         <h1>MEU SITE</h1>
         <span id="UNEM" class="material-icons" onclick="clkmenu()">menu</span>
@@ -30,11 +31,18 @@
     </main>
     <script>
         function clkmenu(){
-            //bagulho.style.display='block'
             if(bagulho.style.display=='block'){
                 bagulho.style.display='none'
             }else{
                 bagulho.style.display='block'
+            }
+        }
+        
+        function mdt(){
+            if(window.innerWidth >= 768){
+                bagulho.style.display='block'
+            }else{
+                bagulho.style.display='none'
             }
         }
     </script>
