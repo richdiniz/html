@@ -43,7 +43,7 @@ menu>ul>li>a{
     text-decoration: none;
     color: white;
     background-color: rgb(76, 76, 76);
-    border-top: 2px solid lightblue;
+    border-top: 2px solid gray;
 }
 menu>ul>li>a:hover{
     background-color: rgb(54, 54, 54);
