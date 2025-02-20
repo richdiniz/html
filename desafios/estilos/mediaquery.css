@@ -8,7 +8,7 @@ lilas: #5f2c82
 
 @media screen and (min-width: 760px) and (max-width:992px){
     body{
-        background-image: linear-gradient(to top,#000000,#ff0033 );
+        background-image: linear-gradient(to top,#7e0019,#ff0033 );
     }
     
     section#login{
@@ -29,7 +29,7 @@ lilas: #5f2c82
 
 @media screen and (min-width: 993px){
     body{
-        background-image: linear-gradient(to top,#000000,#ff0033 );
+        background-image: linear-gradient(to top,#7e0019,#ff0033 );
     }
     
     section#login{
