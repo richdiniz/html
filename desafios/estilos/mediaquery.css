@@ -5,7 +5,7 @@ paleta de cores:
 verde: #49a09d
 lilas: #5f2c82
 */
-
+/*Tablets:*/
 @media screen and (min-width: 760px) and (max-width:992px){
     body{
         background-image: linear-gradient(to top,#7e0019,#ff0033 );
@@ -13,6 +13,7 @@ lilas: #5f2c82
     
     section#login{
         width: 80vw;
+        height: 265px;
     }
 
     section#login > div#imagem{
@@ -27,6 +28,8 @@ lilas: #5f2c82
     }
 }
 
+
+/*Desktop*/
 @media screen and (min-width: 993px){
     body{
         background-image: linear-gradient(to top,#7e0019,#ff0033 );
@@ -34,6 +37,7 @@ lilas: #5f2c82
     
     section#login{
         width: 950px;
+        height: 330px;
     }
     section#login > div#imagem{
         float: right;
@@ -51,5 +55,6 @@ lilas: #5f2c82
     }
     div#formulario>p{
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 }
