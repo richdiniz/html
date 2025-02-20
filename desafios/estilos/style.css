@@ -72,7 +72,6 @@ div.campo>span{
     padding: 5px;
 }
 div.campo>input{
-    background-color: #ff486d00;
     font-size: 1em;
     height: 100%;
     width: calc(100% - 48px);
