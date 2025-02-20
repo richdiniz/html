@@ -38,7 +38,7 @@ section#login{
 }
 section#login > div#imagem{
     display: block;
-    background:black url(https://i.pinimg.com/736x/5c/16/a6/5c16a6098f965c218099a8497fef376a.jpg) no-repeat;
+    background: url(https://i.pinimg.com/736x/5c/16/a6/5c16a6098f965c218099a8497fef376a.jpg) no-repeat;
     height: 200px;
     background-size: cover;
     background-position: center center;
