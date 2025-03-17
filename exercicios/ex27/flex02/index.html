@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+    /*
+    FLEX-DIRECTION:
+    flex-derection:row; (esquerda para direita)deitado->
+    flex-derection:row-reverse; (direita para esquerda)deitado<-
+    flex-derection:column; (de cima para baixo)
+    flex-derection:column-reverse; (de baixo para cima)
+
+    EIXOS: (quandono sentido flex-derection:row)
+    Main-axis:(esquerda-direita)
+      main-start
+      main-end
+    Cross-axis:(cima-baixo)
+      cross-start
+      cross-end
+      
+    EIXOS: (quandono sentido flex-derection:row-reverse)
+    Main-axis:(direita-esquerda)
+      main-start
+      main-end
+    Cross-axis:(cima-baixo)
+      cross-start
+      cross-end
+
+    EIXOS: (quandono sentido flex-derection:column)
+    Main-axis:(cima-baixo)
+      main-start
+      main-end
+    Cross-axis:(esquerda-direita)
+      cross-start
+      cross-end
+      
+    EIXOS: (quandono sentido flex-derection:column-reverse)
+    Main-axis:(baixo-cima)
+      main-start
+      main-end
+    Cross-axis:(esquerda-direita)
+      cross-start
+      cross-end  
+    */
+        div.conteiner{
+            background-color: #fb2f4e;
+            display: flex;/*somente o pai recebe essa configuração*/
+        }
+        div.item{
+            background-color: #00ffaa;
+            border: 1px solid #000000;
+            text-align: center;
+            flex: auto;/*esclusiva do filho*/
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
