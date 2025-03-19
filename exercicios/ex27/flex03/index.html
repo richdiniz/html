@@ -8,13 +8,14 @@
         div.conteiner{
             background-color: #fb2f4e;
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-flow:column wrap;
+            /*se quiser uma shorthand...(flex-direction+flex-wrap), utilize o flex-flow */
         }
         div.item{
             background-color: #00ffaa;
             border: 1px solid #000000;
             text-align: center;
+            flex: auto;
         }
     </style>
 </head>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        div.conteiner{
+            height: 300px;
+            background-color: #fb2f4e;
+            display: flex;
+            flex-flow:row nowrap;
+            justify-content: space-around;/*espaçamento(usado no pai)*/
+            align-items: stretch;/*alinhamento no eixo transversal (cross-axis)*/
+        }
+        div.item{
+            background-color: #5f36d1;
+            border: 1px solid #000000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
