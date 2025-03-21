@@ -8,25 +8,23 @@
         div.conteiner{
             background-color: #fb2f4e;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
         div.item{
             background-color: #00ffaa;
             border: 1px solid #000000;
             text-align: center;
-            flex-basis: 150px;
+            flex-basis: 250px;
+            flex-shrink: 1;/*pode encolher quando é 1, não qundo 0*/
+            flex-grow: 1;/*pode crescer quando é 1, não quando 0*/
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D bloco maior</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">Gbloco maior ainda q ocupará td</div>
+        <div class="item">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis quis dolorem, eveniet, maiores ducimus aliquid enim corrupti incidunt reiciendis pariatur error. Commodi rerum sed necessitatibus perferendis neque, magni laborum.</div>
+        <div class="item">B Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis doloribus magni incidunt, animi fugit dicta autem voluptates asperiores ratione accusamus necessitatibus perspiciatis? Expedita optio quibusdam, aliquid saepe non sed quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cupiditate non ratione, accusamus cum minus aperiam porro commodi, totam, exercitationem blanditiis natus repellendus! Qui provident minus temporibus fuga! Neque, corporis.</div>
+        <div class="item">C  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea quam corporis sed ullam eius enim at doloremque, rerum ad cumque doloribus aliquid est quisquam, fugit nihil aut culpa vitae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente velit nulla repellendus est, ab esse quo, iure quos tempore, reprehenderit illum vel iusto facilis nisi dicta! Magnam, obcaecati rerum! Perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium placeat repudiandae dolorem architecto reiciendis impedit laborum, sunt, soluta perspiciatis nisi vero est dignissimos ullam ratione natus delectus illum consectetur! Ea?</div>
     </div>
 </body>
 </html>
